@@ -1,8 +1,7 @@
-import requests 
-url ="https://ipinfo.io/190.60.194.114/json"
-try:
-    response = requests.get(url)
-    data = requests.json()
-    print(data)
-except:
-    print("ERRRORRRRRRR")
+import requests
+import pandas as pd
+import numpy as np
+
+def parameters ():
+def querie():
+def response():
