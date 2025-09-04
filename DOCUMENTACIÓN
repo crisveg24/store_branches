@@ -1,0 +1,50 @@
+## Documentación del Proyecto
+
+### ¿Qué aprendimos?
+
+Durante el desarrollo de este proyecto, adquirimos nuevas habilidades relacionadas con el uso de Git y GitHub, herramientas fundamentales para la gestión de código y trabajo colaborativo en proyectos de desarrollo. Aprendimos a usar comandos básicos de Git dentro de GitHub para gestionar nuestro código, desde la creación de un repositorio hasta la gestión de ramas.
+
+Una de las principales metodologías que aplicamos fue **GitFlow**, una estrategia de flujo de trabajo en Git que se utiliza para gestionar las ramas de un proyecto de manera eficiente. GitFlow nos permitió estructurar de forma organizada las tareas y funcionalidades que se implementaron en el proyecto, facilitando la integración de cambios y reduciendo los posibles conflictos al trabajar en equipo.
+
+También entendimos la importancia de usar un archivo `.gitignore`, el cual nos permite excluir archivos y carpetas que no deben ser versionados, como archivos temporales o dependencias, evitando que nuestro repositorio crezca innecesariamente o que se suban archivos confidenciales.
+
+En cuanto al desarrollo del proyecto en sí, trabajamos con el concepto de un **ETL** (Extract, Transform, Load), un proceso esencial en la manipulación de datos. Este proceso permite extraer datos de diferentes fuentes, transformarlos para adaptarlos a las necesidades del análisis y, finalmente, cargarlos en un formato adecuado para su utilización posterior.
+
+---
+
+### ¿Qué es un ETL?
+
+El proceso **ETL** es una metodología comúnmente utilizada en el procesamiento de datos. Sus tres fases son:
+
+1. **Extract (Extraer):** En esta fase, los datos se obtienen de diversas fuentes, que pueden ser bases de datos, archivos, APIs, etc.
+2. **Transform (Transformar):** Los datos extraídos se transforman para cumplir con los requerimientos de calidad y formato. Esto puede incluir limpieza, normalización, transformación de valores, entre otros.
+3. **Load (Cargar):** Finalmente, los datos transformados se cargan en un destino, como una base de datos o un archivo, donde estarán listos para su análisis o visualización.
+
+En nuestro proyecto, el proceso ETL se implementa para limpiar y transformar datos de un dataset sobre viajes de Uber y, luego, cargar los datos procesados en un archivo listo para su análisis.
+
+Referencia:
+
+* "¿Qué son los procesos ETL? Conócelos a fondo" https://platzi.com/blog/que-es-un-etl/.
+
+---
+
+### Uso de ramas y GitFlow
+
+En este proyecto, seguimos la metodología **GitFlow**, la cual nos permitió organizar el trabajo en distintas ramas según el tipo de tarea a realizar. Esta estructura facilita el trabajo colaborativo y mejora la integración continua, permitiendo un flujo de trabajo más claro y controlado. Las principales ramas utilizadas fueron:
+
+* **`main`:** Esta rama contiene el código que está en producción o listo para ser entregado.
+* **`develop`:** En esta rama se fusionan las funcionalidades que están en desarrollo y que están listas para ser probadas.
+* **Ramas de características (feature):** Cada nueva funcionalidad se desarrolla en una rama separada que se crea desde `develop`.
+
+El uso de GitFlow permitió que cada tarea o funcionalidad se trabajara de forma independiente, sin interrumpir el trabajo en curso en otras ramas, y facilitó la integración de las modificaciones cuando fueron completadas.
+
+---
+
+### Importancia del `.gitignore`
+
+El archivo `.gitignore` juega un papel crucial en cualquier proyecto de desarrollo. En este proyecto, aprendimos a configurar un archivo `.gitignore` para asegurarnos de que ciertos archivos y carpetas no fueran subidos al repositorio. Esto incluye:
+
+* Archivos temporales generados por el editor de texto (por ejemplo, `.vscode/` o `*.pyc`).
+* Dependencias y archivos de configuración local (por ejemplo, `node_modules/`, o archivos `.env` que contienen variables sensibles).
+
+El `.gitignore` no solo ayuda a mantener el repositorio limpio y organizado, sino que también previene la subida accidental de archivos sensibles o innecesarios, lo que podría generar problemas de seguridad o aumentar el tamaño del repositorio innecesariamente.
